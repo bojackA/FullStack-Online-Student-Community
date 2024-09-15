@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Page</title>
+        <link rel="stylesheet" href="./page.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        
+      <nav>
+        <div class="container">
+            <a href="../MyProfile/My_Profile.php">
+                <h2 class="log"><i class="fas fa-graduation-cap"></i>CollegeCom</h2>
+            </a>
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+            <div class="left">
+            <a class="profile">
+                <div class="profile-photo">
+                <img src="./user.png">
+                </div>
+           Hala Akkad
+                <div class="handle">
+                <h4><?php echo $row['fname']; ?></h4>
+                    <p class="text-muted">
+                    <?php echo $row['email']; ?>
+                    </p>
+                  
+                </div>
+            </a>
+            <div class="sidebar">
+                <a class="menu-items active">
+                    <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                 
+                    <div class='notifications-popup'>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="../images/user.png">
+                        </div>
+                        <div class="notification-body">
+                            <b>mouhammad mousa</b> accept your friend request
+                            <small class="text-muted">2 Days AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="../images/user.png">
+                        </div>
+                        <div class="notification-body">
+                            <b>Amer Sawan</b> comment on your post
+                            <small class="text-muted"> 1 Hours AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="../images/user.png">
+                        </div>
+                        <div class="notification-body">
+                            <b>Loay Takwa</b> and <b>30 others </b> liked your post
+                            <small class="text-muted">2 Days AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="../images/user.png">
+                        </div>
+                        <div class="notification-body">
+                            <b>Maha dabagh</b> Comment on your post
+                            <small class="text-muted">2 Days AGO</small>
+                        </div>
+                    </div>
+                    </div>
+                    <a href class="menu-items">
+                        <span ><i  class="uil uil-envelope-alt"></i></span><h3>Message</h3>
+                        </a>
+                   
+                <a class="menu-items">
+                    <span><i class="uil uil-book-alt"></i></span><h3>Courses</h3>
+                    </a>
+                    <a class="menu-items">
+                        <span><i class="uil uil-cloud-bookmark"></i></span><h3>My Library</h3>
+                        </a>
+            <a class="menu-items">
+                <span><i class="uil uil-graduation-cap"></i></span><h3>GPA Calculeter</h3>
+                </a>
+                <a class="menu-items">
+                <span><i class="uil uil-calender"></i></span><h3>Calender</h3>
+                </a>
+                <a  href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="menu-items">
+                    <span><i class="uil uil-sign-out-alt"></i></span><h3>Logout</h3>
+                </a>
+                
+            </div>
+        </div>
+
+            <div class="middle">
+                    <div class="containers">
+                        <div class="wrappers">
+                            <section class="posts">
+                                <header> Create Post</header>
+                                <form action="#">
+                                    <div class="contents">
+                                         <img src="./user.png">
+                                        <div class="detailss">
+                                            <p>Hala Akkad</p>
+                                            </div>
+                                        </div>
+                                   <textarea placeholder="Write your post" required></textarea>
+                                   <div class="ops">
+                                    <p>Add to your post</p>
+                                    <ul class="list">
+                                        <input type="file" id="file" accept="image/*">
+                                        <label for="file" id="upload"><i class="uil uil-camera"></i></label>
+                                        <!--<li> <i class="	far fa-file-pdf"></i> </li>-->
+                                    </ul>
+                                   </div>
+                                   <button>Post</button>
+                                </form>
+                    
+                    
+                            </section>   
+                            </div>
+                            </div>
+                            <div class="post">
+                                <div class="post-top">
+                                    <div class="dp">
+                                        <img src="./user.png" alt="">
+                                    </div>
+                                    <div class="post-info">
+                                        <p class="name">Hala Akkad</p>
+                                        
+                                    </div>
+                                    <i class="uil uil-edit"></i>
+                                    <span class="uil uil-multiply"></span>
+                                </div>
+                
+                                <div class="post-content">
+                                    
+                                   
+                         لو سمحتوا حد بيعرف لوين داخل بمادة النظم الخبيرة ؟ وفي عندي كم سؤال ممكن حدا يساعدني؟
+                         <br> 
+                         <br>
+                                    وبمادة الشبكات الشابتر الخامس داخل؟
+                            
+                                </div>
+                                
+                                <div class="post-bottom">
+                                    <div class="action">
+                                        <i class=""></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="action">
+                                        <i class=""></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="action">
+                                        <i class=""></i>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="comment-site">
+                                    <div class="profile-photo">
+                                        <a href="#" id="profile-link">
+                                            <img id="Profile_images" src="./user.png">
+                                        </a>
+                                    </div>
+                                    <div class="comment-input">
+                                        <form action="">
+                                        <input type="submit" name="comment" value="Comment" >
+                                        <div class="comment-icon">
+                                            
+                                               
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            
+                                        </div>
+                                        <div >
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="post">
+                                <div class="post-top">
+                                    <div class="dp">
+                                        <img src="./user.png" alt="">
+                                    </div>
+                                    <div class="post-info">
+                                        <p class="name">Hala Akkad</p>
+                                    </div>
+                                    <i class="uil uil-edit"></i>
+                                    <span class="uil uil-multiply"></span>
+                                </div>
+                
+                                <div class="post-content">
+                                   Hello it's ME
+                                    <img src="./upload.png" />
+                                </div>
+                                
+                                <div class="post-bottom">
+                                    <div class="action">
+                                        <i class=""></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="action">
+                                        <i class=""></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="action">
+                                        <i class=""></i>
+                                    </div>
+                                </div>
+                                <div class="comment-site">
+                                    <div class="profile-photo">
+                                        <a href="#" id="profile-link">
+                                            <img id="Profile_images" src="./user.png">
+                                        </a>
+                                    </div>
+                                    <div class="comment-input">
+                                        <form action="">
+                                            <input type="submit" name="comment" value="Comment" >
+                                        <div class="comment-icon">
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                        
+                                        </div>
+                                        <div >
+                                         
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                
+            </div>
+       
+      </main>
+    
+    </body>
+</html>

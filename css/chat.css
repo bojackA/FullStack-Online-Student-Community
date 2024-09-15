@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: #e9edfb;
+  color: #224bcf;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #224bcf;
+}
+
+.heading {
+  background: url(../images/heading-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading h3 {
+  font-size: 3.5rem;
+  color: #302851;
+}
+
+.heading p {
+  font-size: 1.6rem;
+  color: #666;
+  padding-top: .5rem;
+}
+
+.heading p a {
+  padding-right: .5rem;
+  color: #fa1d86;
+}
+
+.heading p a:hover {
+  color: #224bcf;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9%;
+  background: #224bcf;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.header .logo i {
+  color: #fa1d86;
+}
+
+.header .navbar ul {
+  list-style: none;
+}
+
+.header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.header .navbar ul li:hover ul {
+  display: block;
+}
+
+.header .navbar ul li a {
+  padding: 2rem;
+  display: block;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.header .navbar ul li a:hover {
+  background: #fa1d86;
+}
+
+.header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 20rem;
+  background: #224bcf;
+  display: none;
+}
+
+.header .navbar ul li ul li {
+  width: 100%;
+}
+
+#menu-btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2.5rem;
+  display: none;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+      padding: 1px 35px 35px 35px;
+      background-color: #ecf0f3;
+      box-shadow: 13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
+  .chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  .chat-area header .back-icon{
+    color: #695CFE;
+    font-size: 18px;
+  }
+  .chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+  }
+  .chat-area header .details span{
+    font-size: 17px;
+    font-weight: 500;
+    color: #695CFE;
+  }
+  .chat-area header .details p{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .chat-box{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    padding: 10px 30px 20px 30px;
+    background:#e3e4e6;
+    border-radius: 20px;
+  }
+  .chat-box .outgoing{
+    display: flex;
+  }
+  .chat-box .chat p{
+    word-wrap: break-word;
+    padding: 20px 25px;
+  }
+  .outgoing .details p{
+    background: #695CFE;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+  }
+  .chat-box .outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+  }
+  .chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+  }
+  .chat-box .incoming .details{
+    margin-right: auto;
+    margin-left: 10px;
+    max-width: calc(100% - 130px);
+  }
+  .chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+    
+  }
+  .incoming .details p{
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+  }
+   .chat-box::-webkit-scrollbar{
+    width: 0px;
+  }
+  .typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .typing-area input{
+    height: 45px;
+    width: calc(180% - 10px);
+    font-size: 16px;
+    padding: 0 13px;
+    border: 1px solid #e3e4e6;
+    outline: none;
+    border-radius: 25px;
+    background-color: rgb(213, 208, 208);
+  }
+  .typing-area button{
+    color: #fff;
+    width: 90px;
+    border: none;
+    outline: none;
+    background:#fa1d86;
+    font-size: 19px;
+    cursor: pointer;
+    opacity: 0.7;
+    pointer-events: none;
+    border-radius: 40px;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+  }
+  .typing-area button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
